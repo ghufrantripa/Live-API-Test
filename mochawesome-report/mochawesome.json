@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-01-04T06:42:33.498Z",
+    "end": "2023-01-04T06:42:35.901Z",
+    "duration": 2403,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8acb1ae3-7d8a-4f6f-a957-f72484ece929",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "996c3785-caee-45e8-99e4-3823d216c2d6",
+          "title": "Post Request Example",
+          "fullFile": "C:\\Users\\Ghufran Tripa\\Documents\\myskill-live-apiTest\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status equal to 200",
+              "fullTitle": "Post Request Example response status equal to 200",
+              "timedOut": false,
+              "duration": 1309,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).status).to.equal(200)",
+              "err": {},
+              "uuid": "f15659f7-9ed3-4015-aebd-194474759173",
+              "parentUUID": "996c3785-caee-45e8-99e4-3823d216c2d6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body to haveOwnProperty",
+              "fullTitle": "Post Request Example response body to haveOwnProperty",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).body).to.haveOwnProperty(`message`)",
+              "err": {},
+              "uuid": "7c414281-acee-4174-8a17-bbd2e9673c33",
+              "parentUUID": "996c3785-caee-45e8-99e4-3823d216c2d6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f15659f7-9ed3-4015-aebd-194474759173",
+            "7c414281-acee-4174-8a17-bbd2e9673c33"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1310,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "db8dee73-a36f-45d4-a9ad-baf286493e4b",
+          "title": "Chai Assert - Get Example",
+          "fullFile": "C:\\Users\\Ghufran Tripa\\Documents\\myskill-live-apiTest\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status equal to 200",
+              "fullTitle": "Chai Assert - Get Example response status equal to 200",
+              "timedOut": false,
+              "duration": 1080,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).status).to.equal(200)",
+              "err": {},
+              "uuid": "f482cb38-c7ed-4cd4-b48d-cf332d6bf9f5",
+              "parentUUID": "db8dee73-a36f-45d4-a9ad-baf286493e4b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body to have property",
+              "fullTitle": "Chai Assert - Get Example response body to have property",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).body).to.haveOwnProperty(`available`)\nexpect((await response).body).to.haveOwnProperty(`unavailable`)\nexpect((await response).body).to.haveOwnProperty(`pending`)\nexpect((await response).body).to.haveOwnProperty(`status`)",
+              "err": {
+                "message": "AssertionError: expected { sold: 2, string: 551, …(5) } to have own property 'unavailable'",
+                "estack": "AssertionError: expected { sold: 2, string: 551, …(5) } to have own property 'unavailable'\n    at Context.<anonymous> (test\\api\\chaiAssert.js:26:42)",
+                "diff": null
+              },
+              "uuid": "0e138072-1a2a-437a-af7c-ae8003f44bfa",
+              "parentUUID": "db8dee73-a36f-45d4-a9ad-baf286493e4b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f482cb38-c7ed-4cd4-b48d-cf332d6bf9f5"
+          ],
+          "failures": [
+            "0e138072-1a2a-437a-af7c-ae8003f44bfa"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1081,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
